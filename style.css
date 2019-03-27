@@ -9,15 +9,24 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+	font-family: 'Gotham Pro Medium';
+	src: url('fonts/GothamPro/GothamPro-Medium.eot');
+	src: url('fonts/GothamPro/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+	url('fonts/GothamPro/GothamPro-Medium.woff') format('woff'),
+	url('fonts/GothamPro/GothamPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	}
 .clearfix:before,
 .clearfix:after {content: " "; display: table;}
 .clearfix:after {clear: both;}
 
-body {background:url("background_main.gif") repeat;font-family:Verdana, Geneva, sans-serif;}
+body {background:url("background_main.gif") repeat;font-family: "RobotoLight";}
 a {color:#000;text-decoration:none;}
 a:hover {text-decoration:none;}
 textarea {resize:none;}
-h1 { font:38px/38px calibri,arial;text-align:center;color:#000;}
+h1 { font-size:35px; font-family: 'Gotham Pro Medium';font-weight: 100;text-align:center;color:#000;}
 h2 {color: #282828; font-size: 22px; font-weight: 100; font-family: 'RobotoLight';}
 h3 {font-size:29px; font-family: 'RobotoLight'; font-weight:normal; color:#333; margin: 0;}
 p {font: 22px 'RobotoLight'; font-weight: 100; color: #111;}
@@ -41,7 +50,7 @@ header a {border-bottom:1px dashed #20c186;}
 	width: 405px;
 	height: 550px;
 	color: #fff;
-	font-family: 'calibri';
+	font-family: 'Gotham Pro Medium';
 }
 /*логотип*/
 .text_only_logo {width: 300px; margin-top: 4px; font-size: 12px;}
@@ -49,7 +58,7 @@ header a {border-bottom:1px dashed #20c186;}
 
 /*блок с описанием под логотипов*/
 .text_only_main_page {padding: 16px 19px 30px; width: 380px; border: 1px solid rgba(255,255,255, 0.13); background: rgba(0,0,0, .5);}
-.text_only_main_page p {width: 100%; font-size: 24px; color: #fff; font-weight: 400; font-family: 'calibri';}
+.text_only_main_page p {width: 100%; font-size: 24px; color: #fff; font-weight: 400; font-family: 'Gotham Pro Medium';}
 .text_only_main_page p span {padding-left: 35px;}
 
 /*кнопка регистрации*/
@@ -63,7 +72,7 @@ header a {border-bottom:1px dashed #20c186;}
 	background: #C34E3D;
 	color: #fff;
 	text-align: center;
-	font-family: 'calibri';
+	font-family: 'Gotham Pro Medium';
 	transition: all 0.7s;
 }
 .text_only_main_page_reg_button:hover{background: #fff;}
@@ -77,8 +86,8 @@ header a {border-bottom:1px dashed #20c186;}
 	color: #fff;
 	text-decoration: none;
 }
-.text_only_main_page_reg_button p {color: #fff; font-family: 'calibri'; font-size: 18px;}
-.text_title_reg_button {font-size: 24px;line-height: 1; margin: 0; color: #fff;}
+.text_only_main_page_reg_button p {color: #fff; font-family: 'Gotham Pro Medium'; font-size: 14px; font-weight: 100;}
+.text_title_reg_button {font-size: 20px;line-height: 1; margin: 0; color: #fff;}
 
 /*разметка контейнера для сайта*/
 main {width:1200px; margin:20px auto;}
@@ -96,7 +105,7 @@ main {width:1200px; margin:20px auto;}
 	display:inline-block;
 	height:48px;
 	position:relative;
-	font:16px/48px Verdana, Geneva, sans-serif; 
+	font:16px/48px "RobotoLight"; 
 	text-decoration:none;
 	text-align:center; 
 	color:#000; 
@@ -181,7 +190,7 @@ input[type=file]{position:absolute;width:300px;height:48px;font-size:99px;opacit
 }
 
 /*текст в первом номере инструкции*/
-.manual_item_first {margin-top: 3px; font-family: 'calibri';}
+.manual_item_first {margin-top: 3px; font-family: 'Gotham Pro Medium';}
 .text_manual_item_first {float: right; padding-top: 20px; width: 1110px;}
 
 /*отступ для абзаца*/
@@ -232,7 +241,8 @@ input[type=file]{position:absolute;width:300px;height:48px;font-size:99px;opacit
 	float: right;
 	margin-top: 33px;
 	margin-right: 240px;
-	font: 18px 'calibri';
+	font-size: 18px;
+	font-family: 'Gotham Pro Medium';
 	color: #a9a9a9;
 	text-decoration: none;
 }
@@ -309,8 +319,85 @@ ol.text {margin-left:20px;}
 .box  a {display:inline-block;margin-top:15px;}
 .box .goback {display:inline-block;position:relative;top:-10px;left:0;margin: 0;}
 
+/*slider*/
 
 
+.slide_img {
+	
+	height: 327px;
+	width: 576px;
+	transition: all 1s;
+}
 
+.slide_img_2 {
+	background: url('../images/slick.png') no-repeat center;
+}
 
+.slide_img_1 {
+	background: url('../images/box.png') no-repeat center;
+}
 
+.hidden {
+	opacity: 0;
+}
+
+.off {
+	display: none;
+}
+
+.slide_container {width: 1135px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 70px; position: relative; margin-bottom: 90px;}
+.slide_container::before {
+	content: '';
+	position: absolute;
+	background: url('../images/arrow.png') no-repeat center;
+	left: -79px;
+	top: 115px;
+	height: 192px;
+	width: 48px;
+}
+
+.slide_text {
+	width: 536px;
+}
+
+.slide_container::after {
+	content: '';
+	position: absolute;
+	background: url('../images/arrow.png') no-repeat center;
+	right: -79px;
+	top: 115px;
+	height: 192px;
+	width: 48px;
+	transform: rotate(180deg);
+}
+
+.slide_paragraph {
+	font-family: "RobotoLight";
+	font-size: 20px; 
+	text-indent: 1.5em;
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+.slider_items {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 112px;
+	margin-bottom: 70px;
+}
+
+.slider_item {
+	height: 16px;
+	width: 16px;
+	border-radius: 50%;
+	background-color: #acacac;
+}
+
+.slider_item_selected {
+	background-color: #508281;
+}
+
+.slider_item_last {
+	background-color: #c34e3d;
+}
