@@ -1,0 +1,15 @@
+<krpano version="1.17.4" html5="prefer" showerrors="false" logkey="false">
+	<control mousetype="drag2D" />
+	<view hlookat="0" vlookat="0"  fisheye="0.25" fovtype="MFOV" fov="99" maxpixelzoom="1.0" fovmax="99" />
+	<autorotate enabled="true"
+            waittime="1"
+            speed="2"
+            />
+			
+	<cursors url="cursor.png" />
+	<preview url="panos/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>
+	<image>
+			<cube url="panos/pano_%s.jpg" />
+	</image>
+	
+</krpano>

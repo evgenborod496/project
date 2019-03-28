@@ -11,7 +11,6 @@
         <link rel="shortcut icon" href="archholder.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script type="text/javascript" src="jquery.js"></script>
-        <script src="js/slider.js" defer></script>
         <script src="http://malsup.github.com/jquery.form.js"></script>
 <!-- внизу image_scr для шеринга в соц-сетях -->		
         <link rel="image_src" href="http://archholder.com/33/pano.jpg" />
@@ -155,66 +154,6 @@
                     </h1>
                 </li>
             </ul>
-
-            <div class="slide_container">
-              <div class="slide_img slide_img_1 hidden off"></div>
-              <div class="slide_text hidden off">
-                <p class="slide_paragraph">		Визуализация выглядит гораздо нагляднее. 
-                  Позволяет и архитектору и заказчику окунуться в помещение и гораздо реальнее представить себе интерьер. </p>
-              </div>
-              <div class="slide_img slide_img_2"></div>
-              <div class="slide_text">
-                <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
-                   Задумайтесь как много Вы тратите на это время? <br>
-                   После утверждения планировки вы уже знаете, где <br>
-                   будут стоять ваши камеры и нет смысла их менять.</p>
-                <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
-                   или комнату, заказчики просят порой по 3-4 ракурса. <br>
-                   А все это нужно фотошопить. От лица создателей (3 <br>
-                   дешников со стажем) заявляем - мы настолько <br>
-                   обленились, что просто делаем несколько масок, и <br>
-                   фотошопим все текстуры уже после рендера. Этот же <br>
-                   фактор уменьшает необходимость так кропотливо <br>
-                   забоиться о всех текстурах до окончания рендера.</p>
-              </div>
-              <div class="slide_img slide_img_3 hidden off"></div>
-              <div class="slide_text hidden off">
-                <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
-                   Задумайтесь как много Вы тратите на это время? <br>
-                   После утверждения планировки вы уже знаете, где <br>
-                   будут стоять ваши камеры и нет смысла их менять.</p>
-                <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
-                   или комнату, заказчики просят порой по 3-4 ракурса. <br>
-                   А все это нужно фотошопить. От лица создателей (3 <br>
-                   дешников со стажем) заявляем - мы настолько <br>
-                   обленились, что просто делаем несколько масок, и <br>
-                   фотошопим все текстуры уже после рендера. Этот же <br>
-                   фактор уменьшает необходимость так кропотливо <br>
-                   забоиться о всех текстурах до окончания рендера.</p>
-              </div>
-              <div class="slide_img slide_img_4 hidden off"></div>
-              <div class="slide_text hidden off">
-                <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
-                   Задумайтесь как много Вы тратите на это время? <br>
-                   После утверждения планировки вы уже знаете, где <br>
-                   будут стоять ваши камеры и нет смысла их менять.</p>
-                <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
-                   или комнату, заказчики просят порой по 3-4 ракурса. <br>
-                   А все это нужно фотошопить. От лица создателей (3 <br>
-                   дешников со стажем) заявляем - мы настолько <br>
-                   обленились, что просто делаем несколько масок, и <br>
-                   фотошопим все текстуры уже после рендера. Этот же <br>
-                   фактор уменьшает необходимость так кропотливо <br>
-                   забоиться о всех текстурах до окончания рендера.</p>
-              </div>
-            </div>
-            <div class="slider_items">
-              <div class="slider_item"></div>
-              <div class="slider_item slider_item_selected"></div>
-              <div class="slider_item"></div>
-              <div class="slider_item slider_item_last"></div>
-            </div>
-            
             <div class="manual_container">
                 <div class="tabs_with_help" id="3dsMax">
                    <ul class="tabs_with_help_buttons clearfix">
@@ -478,101 +417,66 @@
 			   
 			  
                <div class="tabs_with_help" id="WHY">
-                   <ul class="tabs_with_help_buttons clearfix">
-                       <li><a href="#manual_5"><h3>С помощью Vray:</h3></a></li>
-                       <li><a href="#manual_6"><h3>С помощью <span>Iray, MentalRay, Corona и др:</span></h3></a></li>
-                   </ul>
-                  <div class="manual_content">
-                      <div class="manual_content_item" id="manual_5">
-                          <a href="/archholder_3dsmax-vray.rar" class="text_link_download">Скачать пример  виртуального 3D тура</a>
-                          <div class="manual_item_first">
-                              <span class="text_number_manual">1</span>
-                              <div class="text_manual_item_first">
-                                  <p><span class="indent_paragraph"></span>Создайте камеру и разместите ее так чтобы высота камеры и точка в которую вы смотрите находились на одной высоте (на уровне человеческого глаза). Настройки камеры не важны. </p>
-                                  <p><span class="indent_paragraph"></span>Для создания виртуального тура вы можете использовать любую камеру, 
-                                  но если вы работаете с VrayPhysicalCamera, то в закладке vigneting уберите галочку.</p>
-                              </div>
-                              <div class="manual_item_first_photo">
-                                  <img src="tz_camera-hight.gif" alt="photo" />
-                                  <div class="text_italic">
-                                      <p><span class="indent_paragraph"></span>Камера имеет встроенную регулировку угла обзора, но она не является сферической и макс- имальный угол обзора, который возможно там установить, не превышает 175 градусов. Для обхода этого ограничения V-Ray имеет специальный инструмент, расширяющий возможности стандартной камеры. Все изменения, сделанные с помощью этого инструмента не отображаются во вьюпорте 3ds Max и будут видны непосредственно на визуализации.</p>
-                                  </div>
-                              </div>
+                    <div class="slide_container">
+                            <div class="slide_img slide_img_1 hidden off"></div>
+                            <div class="slide_text hidden off">
+                              <p class="slide_paragraph">		Визуализация выглядит гораздо нагляднее. 
+                                Позволяет и архитектору и заказчику окунуться в помещение и гораздо реальнее представить себе интерьер. </p>
+                            </div>
+                            <div class="slide_img slide_img_2"></div>
+                            <div class="slide_text">
+                              <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
+                                 Задумайтесь как много Вы тратите на это время? <br>
+                                 После утверждения планировки вы уже знаете, где <br>
+                                 будут стоять ваши камеры и нет смысла их менять.</p>
+                              <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
+                                 или комнату, заказчики просят порой по 3-4 ракурса. <br>
+                                 А все это нужно фотошопить. От лица создателей (3 <br>
+                                 дешников со стажем) заявляем - мы настолько <br>
+                                 обленились, что просто делаем несколько масок, и <br>
+                                 фотошопим все текстуры уже после рендера. Этот же <br>
+                                 фактор уменьшает необходимость так кропотливо <br>
+                                 забоиться о всех текстурах до окончания рендера.</p>
+                            </div>
+                            <div class="slide_img slide_img_3 hidden off"></div>
+                            <div class="slide_text hidden off">
+                              <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
+                                 Задумайтесь как много Вы тратите на это время? <br>
+                                 После утверждения планировки вы уже знаете, где <br>
+                                 будут стоять ваши камеры и нет смысла их менять.</p>
+                              <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
+                                 или комнату, заказчики просят порой по 3-4 ракурса. <br>
+                                 А все это нужно фотошопить. От лица создателей (3 <br>
+                                 дешников со стажем) заявляем - мы настолько <br>
+                                 обленились, что просто делаем несколько масок, и <br>
+                                 фотошопим все текстуры уже после рендера. Этот же <br>
+                                 фактор уменьшает необходимость так кропотливо <br>
+                                 забоиться о всех текстурах до окончания рендера.</p>
+                            </div>
+                            <div class="slide_img slide_img_4 hidden off"></div>
+                            <div class="slide_text hidden off">
+                              <p class="slide_paragraph">	Больше никогда никаких утверждений ракурсов! <br>
+                                 Задумайтесь как много Вы тратите на это время? <br>
+                                 После утверждения планировки вы уже знаете, где <br>
+                                 будут стоять ваши камеры и нет смысла их менять.</p>
+                              <p class="slide_paragraph">	На одно маленькое помещение, на один санузел <br>
+                                 или комнату, заказчики просят порой по 3-4 ракурса. <br>
+                                 А все это нужно фотошопить. От лица создателей (3 <br>
+                                 дешников со стажем) заявляем - мы настолько <br>
+                                 обленились, что просто делаем несколько масок, и <br>
+                                 фотошопим все текстуры уже после рендера. Этот же <br>
+                                 фактор уменьшает необходимость так кропотливо <br>
+                                 забоиться о всех текстурах до окончания рендера.</p>
+                            </div>
                           </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">2</span>
-                             <div class="manual_text_position_left_long">
-                                  <p>
-                                     <span class="indent_paragraph"></span>Переходим в окно Render Scene: (F10). Здесь следует найти закладку V-Rray: Camera. В разделе Camera type в выпадающем списке Type выбрать тип камеры Spherical. Таким образом, камера станет сферической. После, необходимо активировать функцию Override FOV, установив напротив нее галочку для подмены угла обзора и установить в поле FOV необходимое значение подмены угла обзора в 360 градусов. 
-                                 </p>
-                             </div>
-                              <img src="tz1.png" alt="screen" />
-                              <div class="clear"></div><br><br>
+                          <div class="slider_items">
+                            <div class="slider_item"></div>
+                            <div class="slider_item slider_item_selected"></div>
+                            <div class="slider_item"></div>
+                            <div class="slider_item slider_item_last"></div>
                           </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">3</span>
-                              <div class="manual_text_position_left_long">
-                                  <p>
-                                     <span class="indent_paragraph"></span>Чтобы получить корректное изображение проекции следует установить соотношение сторон 2:1 для финальной визуализации. Для этого необходимо перейти к закладке Common диалогового окна Render Scene: (F10) и в разделе Output Size выставить значение параметра Image Aspect равным 2.
-                                  </p>
-                              </div>
-                              <img src="tz2.png" alt="screen" />
-                              <div class="clear"></div><br><br>
-                          </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">4</span>
-                              <div class="manual_text_position_left_short">
-                                  <p>
-                                      <span class="indent_paragraph"></span>Для просмотра в виде виртуального тура, воспользуйтесь кнопкой "загрузить панораму". Разрешение присылаемых jpg-файлов, не должно быть более 8000х4000px и не более 20мб.
-                                  </p>
-                                  <br><br>
-                                  <p><span class="indent_paragraph"></span>Если использовали для обработки фотошоп, сохраняйте картинк у progressive-jpg c качеством 6-8. Качество останется таким же, а скорость загрузки существенноо уменьшится.</p>
-                              </div>
-                              <img src="tz_example1.jpg" alt="screen" />
-                              <div class="clear"></div><br><br>
-                          </div>
-                          <a href="/archholder_3dsmax-vray.rar" class="text_link_download">Скачать пример  виртуального 3D тура</a>
                       </div>
-                      <div class="manual_content_item" id="manual_6">
-                          <div style="text-align: center;" class="manual_item_first">
-                              <span class="text_number_manual">1</span>
-                              <div style="text-align: left;" class="text_manual_item_first">
-                                  <p><span class="indent_paragraph"></span>Создайте камеру и разместите ее так, что бы высота камеры и точка в которую вы смотрите, находились на одной высоте (на уровне человеческого глаза). В зависимости от рендера можно поэксперементировать с любой камерой я пробовал лишь с обычной. Далее заходим в:</p>
-                              </div>
-                              <img style="display: inline-block; margin: 30px auto;" src="tz3.png" alt="photo" />
-                          </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">2</span>
-                              <div class="manual_text_position_left_long">
-                                  <p>
-                                      <span class="indent_paragraph"></span>Далее, перед Вами окажется вот такое окно рендера, с немного нестандартными настройками. Не забудьте выбрать нужную камеру, поставьте хорошее разрешение и нажмите “рендер”.
-                                  </p>
-                              </div>
-                              <img src="tz4.png" alt="screen" />
-                              <div class="clear"></div><br><br>
-                          </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">3</span>
-                              <div class="manual_text_position_left_long">
-                                  <p>
-                                      <span class="indent_paragraph"></span>В итоге перед вами предстанет готовый виртуальный тур, который можно крутить и вертеть наслаждаться им. Чтобы сохранить виртуальный тур в виде картинки для дальнейшей обработки, нужно сохранить его в виде картинки.
-                                  </p>
-                              </div>
-                              <img src="tz5.png" alt="screen" />
-                              <div class="clear"></div><br><br>
-                          </div>
-                          <div class="manual_item">
-                              <span class="text_number_manual">4</span>
-                              <div class="manual_text_position_left_short">
-                                  <p>
-                                     <span class="indent_paragraph"></span>В итоге у Вас получится вот такой рендер:
-                                  </p>
-                              </div>
-                              <img src="tz_example1.jpg" alt="screen" />
-                              <div class="clear"></div><br><br>
-                          </div>
-                          <div class="alert">Внимание! у нас пока отсутствует примеры.. Если захотите поделиться Вашим примером,<br/> оставьте нам сообщение в ”мнениях”. С нас, указание прямой ссылки на автора.</div>                    
-                      </div>
+                      
                   </div>
 				  
 				  
